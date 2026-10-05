@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-chinh);
+}
+
+body {
+  @apply bg-stone-100 text-stone-800;
+}
+
+@layer components {
+  .nut {
+    @apply inline-flex cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-1.5 text-sm font-medium text-stone-700 hover:bg-stone-50 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .nut-chinh {
+    @apply border-amber-800 bg-amber-800 text-white hover:bg-amber-900;
+  }
+  .nut-xoa {
+    @apply border-red-200 text-red-700 hover:bg-red-50;
+  }
+  .o-nhap {
+    @apply w-full rounded-md border border-stone-300 bg-white px-2.5 py-1.5 text-sm;
+  }
+  .nhan {
+    @apply mb-1 block text-xs font-medium text-stone-600;
+  }
+  .the {
+    @apply rounded-lg border border-stone-200 bg-white p-4 shadow-sm;
+  }
+  .bang {
+    @apply w-full text-sm;
+  }
+  .bang th {
+    @apply border-b border-stone-200 px-3 py-2 text-left font-semibold whitespace-nowrap text-stone-600;
+  }
+  .bang td {
+    @apply border-b border-stone-100 px-3 py-2 align-middle;
+  }
+  .so-phai {
+    @apply text-right tabular-nums;
+  }
+  .tieu-de {
+    @apply mb-4 text-xl font-semibold text-stone-900;
+  }
+  .huy-hieu {
+    @apply inline-block rounded-full px-2 py-0.5 text-xs font-medium;
+  }
+}
