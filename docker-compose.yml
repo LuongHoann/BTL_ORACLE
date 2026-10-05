@@ -1,0 +1,24 @@
+services:
+  oracle:
+    image: gvenzl/oracle-free:slim-faststart
+    container_name: oracle-btl
+    restart: unless-stopped
+    ports:
+      - "1521:1521"
+    environment:
+      ORACLE_PASSWORD: Oracle_123456
+      APP_USER: btl_user
+      APP_USER_PASSWORD: Btl_123456
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+      - ./sql:/sql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 60s
+
+volumes:
+  oracle-data:
+    name: oracle-btl-data

@@ -1,0 +1,41 @@
+;;; 
+Export: Release 23.26.3.0.0 - Production on Fri Oct 2 10:41:47 2026
+Version 23.26.3.0.0
+
+Copyright (c) 1982, 2026, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Starting "SYSTEM"."SYS_EXPORT_SCHEMA_01":  system/********@//localhost:1521/FREEPDB1 schemas=QLCAFE directory=DP_DIR dumpfile=qlcafe_schema.dmp logfile=qlcafe_schema_exp.log 
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Processing object type SCHEMA_EXPORT/USER
+Processing object type SCHEMA_EXPORT/SYSTEM_GRANT
+Processing object type SCHEMA_EXPORT/DEFAULT_ROLE
+Processing object type SCHEMA_EXPORT/TABLESPACE_QUOTA
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA/LOGREP
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/GRANT/OWNER_GRANT/OBJECT_GRANT
+Processing object type SCHEMA_EXPORT/TABLE/IDENTITY_COLUMN
+Processing object type SCHEMA_EXPORT/VIEW/VIEW
+Processing object type SCHEMA_EXPORT/VIEW/GRANT/OWNER_GRANT/OBJECT_GRANT
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+. . exported "QLCAFE"."CHUC_VU"                            6.1 KB       5 rows
+. . exported "QLCAFE"."CONG_THUC"                            8 KB     102 rows
+. . exported "QLCAFE"."CT_HOA_DON"                         7.9 KB      51 rows
+. . exported "QLCAFE"."CT_PHIEU_NHAP"                      6.8 KB      21 rows
+. . exported "QLCAFE"."HOA_DON"                              7 KB      23 rows
+. . exported "QLCAFE"."LOAI_MON"                           6.3 KB       5 rows
+. . exported "QLCAFE"."MON"                                7.4 KB      16 rows
+. . exported "QLCAFE"."MON_SIZE"                           6.5 KB      41 rows
+. . exported "QLCAFE"."NGUYEN_LIEU"                        7.3 KB      13 rows
+. . exported "QLCAFE"."NHAN_VIEN"                          8.9 KB       9 rows
+. . exported "QLCAFE"."NHA_CUNG_CAP"                       7.4 KB       5 rows
+. . exported "QLCAFE"."PHIEU_NHAP"                         7.1 KB       8 rows
+. . exported "QLCAFE"."TAI_KHOAN"                            8 KB       5 rows
+Master table "SYSTEM"."SYS_EXPORT_SCHEMA_01" successfully loaded/unloaded
+******************************************************************************
+Dump file set for SYSTEM.SYS_EXPORT_SCHEMA_01 is:
+  /opt/oracle/oradata/dpump/qlcafe_schema.dmp
+Job "SYSTEM"."SYS_EXPORT_SCHEMA_01" successfully completed at Fri Oct 2 10:42:25 2026 elapsed 0 00:00:35
